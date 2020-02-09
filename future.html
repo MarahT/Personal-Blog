@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="default-style" content="/style.css" />
+    <meta name="author" content="Marah Thomas" />
+    <meta
+      name="description"
+      content="My name is Marah Thomas, and this is a website about my life"
+    />
+    <meta name="generator" content="Notepad++" />
+    <meta
+      name="keywords"
+      content="lifestory, assignment, DSV, stockholm's university, WEB1, web development"
+    />
+    <meta name="robots" content="noindex, noarchive" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My name is Marah.</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Life as Marah</h1>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html"> index </a></li>
+          <li><a href="home.php"> home </a></li>
+          <li><a href="history.html"> history </a></li>
+          <li><a href="now.html"> now </a></li>
+          <li><a href="future.html"> future </a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2>Future Plans</h2>
+
+      <article class="future-plans">
+        <h3>Future</h3>
+
+        <h4 class="decorated-section">My Personal Future Plans</h4>
+
+        <figure>
+          <img src="./media/Future.jpg" alt="What's next" />
+          <figcaption>What's next</figcaption>
+        </figure>
+        <p>
+          In the near future, my plans are to graduate, find a job, apply for a
+          citizenship, get into the magister’s program that I applied to and how
+          to drive. After that, my plans are to buy a car, pay off my student
+          loans, continuing my fitness journey, graduate my magister’s program
+          and so on. While I do have some goals set for my future, I don’t
+          restrict myself to a certain timeline or to very specific goals, as
+          I’ve learned from my experiences over the years, each person has their
+          own timeline, and things happen when they’re meant to. So, for that
+          reason, I don’t stress myself too much or worry myself if I don’t
+          achieve my goals at a certain age, and neither should you 😊.
+        </p>
+      </article>
+      <article class="sub-form">
+        <details>
+          <summary
+            ><h4 class="decorated-section">The Future of This Blog</h4></summary
+          >
+          <h5>fill out this form below:</h5>
+          <form
+            method="post"
+            enctype="multipart/form-data"
+            action="./2.3.2/2.3.2.php"
+          >
+            <label>First name:</label>
+            <input
+              type="text"
+              name="fname"
+              placeholder="first name"
+              autofocus
+            />
+            <label>Last name:</label>
+            <input type="text" name="lname" placeholder="last name" />
+            <label> E-mail:</label>
+            <input
+              id="emailadress"
+              type="email"
+              name="em"
+              placeholder="email"
+              required
+            />
+            <label> Add your homepage:</label>
+            <input
+              type="url"
+              pattern="https?://.+"
+              title="Include http://"
+              name="url"
+              placeholder="Home page"
+            />
+            <fieldset>
+              <legend>Choose your gender</legend>
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">male</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">female</label>
+              <input type="radio" id="other" name="gender" value="other" />
+              <label for="other">other</label>
+            </fieldset>
+            <fieldset>
+                   <legend>what is your favorite thing about the site?</legend>
+              <input type="checkbox" id="option1" name="favorite topic: About me" value="on" />
+              <label for="option1">About me</label>
+              <input type="checkbox" id="option2" name="favorite topic: history" value="on" />
+              <label for="option2">History</label>
+              <input type="Checkbox" id="option3" name="favorite topic: Now" value="on"/>
+              <label for="option3">Now</label>
+              <input type="Checkbox" id="option4" name="favorite topic: future" value="on"/>
+              <label for="option4">Future</label>
+              <input type="Checkbox" id="option5" name="favorite topic: QOTD" value="on"/>
+              <label for="option5">Qoute of The Day</label>
+              <input type="Checkbox" id="option6" name="favorite topic: MOFAW" value="on" />
+              <label for="option6">Meaning of Famous Arabic Words</label>
+              <input type="Checkbox" id="option7" name="favorite topic: MNV" value="on" />
+              <label for="option7">Music and Video</label>
+            </fieldset>
+            <label>
+              Enter your favorite topic from the blog: Press any
+              character</label
+            >
+            <input list="Topics" name="topics"/>
+            <datalist id="Topics">
+              <option value="About Me"> About Me </option>
+              <option value="Future"> Future </option>
+              <option value="History"> History </option>
+              <option value="Meaning of Famous Arabic Words">
+                Meaning of Famous Arabic Words</option
+              >
+              <option value="Music and Video"> Music and Video </option>
+              <option value="Now"> Now </option>
+              <option value="Quote of the Day"> Quote of the Day </option>
+            </datalist>
+
+            <label
+              >If you have any other suggestions, write it in this box</label
+            >
+            <textarea id="message" name="message"></textarea>
+
+            <label> If you want to contribute, upload it here: </label>
+            <input type="file" name="file" />
+
+            <input type="submit" id="submit-btn" value="Submit" />
+          </form>
+        </details>
+      </article>
+    </section>
+    <aside>
+      <h3>Random Tidbits:</h3>
+
+      <h5>Famous Arabic words</h5>
+      <dl>
+        <dt>Habibi:</dt>
+        <dd>my love</dd>
+        <dt>Yalla:</dt>
+        <dd>Come on</dd>
+        <dt>Yani:</dt>
+        <dd>I mean</dd>
+      </dl>
+    </aside>
+    <footer>
+      <p>designed by Marah Thomas</p>
+      <a href="mailto:marah.thomas@outlook.com"> Contact me </a>
+    </footer>
+  </body>
+</html>
